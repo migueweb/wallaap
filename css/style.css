@@ -1,0 +1,40 @@
+/* Fonts */
+@font-face {
+    font-family: conthrax;
+    src: url(../assets/fonts/conthrax-sb.ttf);
+}
+:root {
+    --main-color: #6cc5ef;
+    --white: #ffffff;
+    --link-hover: #dfe2ff;
+}
+/*Menu*/
+.link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+.link a {
+    font-size: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: conthrax;
+    transition: border, ease-in, .2s ;
+
+}
+.logo {
+    font-size: 1.2;
+}
+.link a:hover {
+    color: var(--link-hover);
+}
+.menu {
+    display: flex;
+    background-color: var(--main-color);
+    width: 100wh;
+    justify-content: center;
+}
