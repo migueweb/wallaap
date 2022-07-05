@@ -1,11 +1,12 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {
-    --menu-background: linear-gradient(90deg, rgba(162,114,194,1) 0%, rgba(245,61,61,1) 50%, rgba(233,174,91,1) 100%);
+    --black: #000000;
     --white: #ffffff;
     --link-hover: #dfe2ff;
-    --menu-font: Orbitron, serif;
-    --main-font: Montserrat, serif;
+    --main-font: Montserrat, arial, serif;
+    --footer-link-hover: #3a1f4a;
+    --download-button-background: #fff9f9;
 }
 * {
     font-family: var(--main-font);
@@ -17,43 +18,110 @@
 }
 .link a {
     font-size: 1.2rem;
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    font-family: var(--menu-font);
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    font-family: var(--main-font);
     transition: .3s;
 }
 .link a:hover {
-    color: var(--link-hover);
-    text-decoration: line-through;
+    color: var(--black);
+    transform: scale(1.1);
 }
 .menu {
     display: flex;
-    background: var(--menu-background);
+    background-color: #f8c647;
+    background-image: url(../assets/img/liquid-cheese.svg);
+    background-size: cover;
     width: 100%;
     justify-content: center;
 }
-/* Main */
 
+/* home */
+.home {
+    display: flex;
+}
 .home-content{
     width: 100%;
     align-items: center;
     text-align: center;
 }
 .home-content div h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
-
+.img-mockup {
+    max-width: 600px;
+    width: auto;
+    height: auto;
+}
+/* footer :)*/
 footer {
     margin-top: 5rem;
-    background-color: rgb(241, 255, 150);
+    padding-top: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-image: url(../assets/img/liquid-cheese.svg); 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .right {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     text-align: center;
+}
+footer div div li {
+    list-style: none;
+    margin-top: .4rem;
+}
+footer div div li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--black);
+    transition: color, .2s;
+}
+footer div div li a:hover {
+    color: var(--footer-link-hover);
+}
+/**====================================
+                Phone
+====================================*/
+.phone-content {
+    text-align: center;
+}
+.phone-menu {
+    position: fixed;
+    margin-bottom: 5rem;
+}
+.phone-card {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.phone-card img {
+    max-width: 200px;
+    width: auto;
+}
+.phone-card div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -3.8rem;
+}
+.download-button {
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: .8rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    color: var(--white);
+    border-radius: .3rem;
+    transition-duration:.3s;
+}
+.download-button:hover {
+    background-color: var(--download-button-background);
+    color: var(--black);
 }
