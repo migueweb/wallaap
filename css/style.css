@@ -5,7 +5,7 @@
     --white: #ffffff;
     --link-hover: #dfe2ff;
     --main-font: Montserrat, arial, serif;
-    --footer-link-hover: #3a1f4a;
+    --footer-link-hover: #56306c;
     --download-button-background: #fff9f9;
 }
 * {
@@ -33,7 +33,6 @@
 }
 .menu {
     display: flex;
-    background-color: #f8c647;
     background-image: url(../assets/img/liquid-cheese.svg);
     background-size: cover;
     width: 100%;
@@ -57,7 +56,10 @@
     width: auto;
     height: auto;
 }
-/* footer :)*/
+
+/**====================================
+                Footer
+====================================*/
 footer {
     margin-top: 5rem;
     padding-top: 3rem;
@@ -68,22 +70,24 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.right {
+.rights {
     padding-top: 3rem;
     padding-bottom: 1rem;
     text-align: center;
 }
-footer div div li {
-    list-style: none;
-    margin-top: .4rem;
+.rights span {
+    font-weight: bold;
 }
-footer div div li a {
+footer div a {
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    display: block;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--black);
     transition: color, .2s;
 }
-footer div div li a:hover {
+footer div a:hover {
     color: var(--footer-link-hover);
 }
 /**====================================
