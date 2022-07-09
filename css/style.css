@@ -3,11 +3,9 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    --link-hover: #dfe2ff;
     --main-font: Montserrat, arial, serif;
     --footer-link-hover: #56306c;
     --download-button-background: #fff9f9;
-    --d-download-button-background: #9f59c7;
 }
 * {
     font-family: var(--main-font);
