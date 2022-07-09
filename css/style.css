@@ -48,15 +48,17 @@
     align-items: center;
     text-align: center;
 }
-.home-content div h1 {
-    font-size: 2rem;
+.home-title {
+    font-size: 2.5rem;
+}
+.home-title span{
+    font-weight: bold;
 }
 .img-mockup {
     max-width: 600px;
     width: auto;
     height: auto;
 }
-
 /**====================================
                 Footer
 ====================================*/
